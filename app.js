@@ -1,9 +1,31 @@
-var Красный = true;
-var Желтый = false;
-var Зеленый = false;
+var красный = false;
+var желтый = false;
+var зеленый = false;
 
-if (Красный) console.log('Остановитесь!');
-else if (Желтый) console.log('Приготовьтесь!');
-else if (Зеленый) console.log('Можно ехать!');
-else console.log('Ошибка: все огни выключены.')
+var userInput = "зеленый";
+
+if (userInput === "красный") {
+    красный = true;
+}
+else if (userInput === "желтый") {
+    желтый = true;
+}
+else if (userInput === "зеленый") {
+    зеленый = true;
+}
+
+if (красный)  {
+    console.log("Остановитесь!")
+}
+else if (желтый) {
+    console.log("Приготовьтесь!")
+}
+else  if (зеленый) {
+    console.log("Можно ехать!")
+}
+
+else {
+    console.log("Ошибка: некорректный цвет светофора.")
+}
+
 
