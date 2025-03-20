@@ -1,31 +1,12 @@
-var красный = false;
-var желтый = false;
-var зеленый = false;
+"Use strict";
 
-var userInput = "зеленый";
-
-if (userInput === "красный") {
-    красный = true;
+const color = prompt("У светофора каой цвет? (красный, желтый, зеленый)");
+if (color === "красный") {
+  console.log("Остановитесь!");
+} else if (color === "желтый") {
+  console.log("Приготовьтесь!");
+} else if (color === "зеленый") {
+  console.log("Можно ехать!");
+} else {
+  console.log("Ошибка: некорректный цвет светофора.");
 }
-else if (userInput === "желтый") {
-    желтый = true;
-}
-else if (userInput === "зеленый") {
-    зеленый = true;
-}
-
-if (красный)  {
-    console.log("Остановитесь!")
-}
-else if (желтый) {
-    console.log("Приготовьтесь!")
-}
-else  if (зеленый) {
-    console.log("Можно ехать!")
-}
-
-else {
-    console.log("Ошибка: некорректный цвет светофора.")
-}
-
-
